@@ -23,8 +23,25 @@ function user_setup()
   sets.midcast['Ninjutsu Magic']
   sets.midcast.Utsusemi
   sets.Idle.Town
-  sets.Idle.Field
-  sets.Idle.Weak = set_combine(sets.idle.Field, {
+  sets.Idle.Field = {
+      head="Twilight helm",body="Twilight mail",legs="Ogier's Breeches",
+      back="Metallon Mantle",neck="Wiglen gorget",ring1="Jelly ring",ring2="Dark ring",
+    }
+  sets.Idle.Weak = set_combine(sets.defense.PDT, {
       head="Twilight helm",body="Twilight mail"
     })
+  
+sets.defense.PDT = {
+  head="Heathen's Burgonet",
+  body="Mekira meikogai",
+  hands="",
+  legs="Ogier's Breeches",
+  feet="Phorcys schuhs",
+  back="Metallon Mantle",
+  neck="Wiglen gorget",
+  ring1="Jelly ring",
+  ring2="Dark Ring",
+	}
+
+  
 end
