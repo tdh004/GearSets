@@ -1,24 +1,24 @@
     function init_gear_sets()
 
 						                   
-            -- Weaponskill sets
-            -- Default set for any weaponskill that isn't any more specifically defined
-            sets.precast.WS = {ammo="Fracas grenade",
-				head="Ignominy burgeonet +1",body="Phorcys korazin",hands="Phorcys mitts",legs="Eschite cuisses",feet="Heathen's sollerets",
-				back="Atheling Mantle",ear1="Brutal Earring",ear2="Bale Earring",ring1="Spiral ring",ring2="Pyrosoul ring"
-			}
-            sets.precast.WS.Acc = set_combine(sets.precast.WS, {back="Letalis Mantle"})
+	-- Weaponskill sets
+	-- Default set for any weaponskill that isn't any more specifically defined
+	sets.precast.WS = {ammo="Fracas grenade",
+		head="Ignominy burgeonet +1",body="Phorcys korazin",hands="Phorcys mitts",legs="Eschite cuisses",feet="Heathen's sollerets",
+		back="Atheling Mantle",ear1="Brutal Earring",ear2="Bale Earring",ring1="Spiral ring",ring2="Pyrosoul ring"
+	}
+	sets.precast.WS.Acc = set_combine(sets.precast.WS, {back="Letalis Mantle"})
      
             -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
             sets.precast.WS['Catastrophe'] = set_combine(sets.precast.WS, {neck="Soil Gorget",waist="Soil belt",ammo="Bomb core"})
             sets.precast.WS['Catastrophe'].Acc = set_combine(sets.precast.WS.Acc, {neck="Soil Gorget",waist="Soil belt",ammo="Fire bomblet"})
             sets.precast.WS['Catastrophe'].Mod = set_combine(sets.precast.WS['Catastrophe'], {neck="Soil Gorget",waist="Soil belt"})
      
-            sets.precast.WS['Entropy'] = {ammo="Fire bomblet",
-					head="Ignominy burgeonet +1",body="Emet harness +1",hands="Redan gloves",legs="Eschite cuisses", feet="Heathen's sollerets",
-					back="Letalis mantle",neck="Soil gorget",waist="Soil belt",ear1="Brutal earring",ear2="Moonshade earring",ring1="Spiral ring",
-					ring2="Rajas ring"
-			}
+	sets.precast.WS['Entropy'] = {ammo="Fire bomblet",
+		head="Ignominy burgeonet +1",body="Phorcys korazin",hands="Phorcys mitts",legs="Eschite cuisses", feet="Heathen's sollerets",
+		back="Letalis mantle",neck="Soil gorget",waist="Soil belt",
+		ear1="Brutal earring",ear2="Moonshade earring",ring1="Spiral ring",ring2="Rajas ring"
+	}
             sets.precast.WS['Entropy'].Acc = set_combine(sets.precast.WS.Acc, {neck="Soil Gorget",legs="Cizin Breeches"})
             sets.precast.WS['Entropy'].Mod = set_combine(sets.precast.WS['Entropy'], {waist="Soil Belt",legs="Cizin Breeches"})
      
